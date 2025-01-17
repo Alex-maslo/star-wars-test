@@ -8,7 +8,7 @@ type FilmProps = {
 const Film: FC<FilmProps> = ({ film }) => {
   return (
     <div className="border border-orange-500 p-4">
-      {film.name}
+      <h2 className="font-semibold">{film.name}</h2>
 
       <Characters chars={film.characters} />
     </div>
