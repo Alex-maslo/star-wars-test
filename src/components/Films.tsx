@@ -10,7 +10,7 @@ const Films = () => {
   }, []);
 
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-4">
       {films.map((film) => (
         <Film key={film.id} film={film} />
       ))}
